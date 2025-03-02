@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809754512944",
+    "project_id": "quickchat-ab4c2",
+    "storage_bucket": "quickchat-ab4c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809754512944:android:d5f356fe6af06a4667e7f5",
+        "android_client_info": {
+          "package_name": "com.example.quickmassage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKq0gFPfjQtLB4lUuCEyyDeRIe3siVtmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
