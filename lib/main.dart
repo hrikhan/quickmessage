@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quickmassage/auth/auth_gate.dart';
 import 'package:quickmassage/firebase_options.dart';
 import 'package:quickmassage/screen/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:LoginScreen(),
+      home:AuthGate(),
     );
   }
 }
