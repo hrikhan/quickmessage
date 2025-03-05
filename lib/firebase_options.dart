@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -50,19 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCKq0gFPfjQtLB4lUuCEyyDeRIe3siVtmw',
-    appId: '1:809754512944:android:d5f356fe6af06a4667e7f5',
-    messagingSenderId: '809754512944',
-    projectId: 'quickchat-ab4c2',
-    storageBucket: 'quickchat-ab4c2.firebasestorage.app',
+    apiKey: 'AIzaSyBfNJ7OLA4bW7fiSGIBO2KPRAdHyiE7L3U',
+    appId: '1:374338598102:android:b61c93da562536ce210577',
+    messagingSenderId: '374338598102',
+    projectId: 'chatbyhridoy',
+    storageBucket: 'chatbyhridoy.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDhO8plriTgBSZHaCucv4kL23n08Na7JYM',
-    appId: '1:809754512944:ios:b8db514e201e1b9b67e7f5',
-    messagingSenderId: '809754512944',
-    projectId: 'quickchat-ab4c2',
-    storageBucket: 'quickchat-ab4c2.firebasestorage.app',
+    apiKey: 'AIzaSyCzQ9UTnRwX485ubH-qkWYqqoOWCg2lOhw',
+    appId: '1:374338598102:ios:b474b4483f4a8b66210577',
+    messagingSenderId: '374338598102',
+    projectId: 'chatbyhridoy',
+    storageBucket: 'chatbyhridoy.firebasestorage.app',
     iosBundleId: 'com.example.quickmassage',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAgmfRMogzHoFfbkkdm9oA-UKCcoLw19a8',
+    appId: '1:374338598102:web:762640c8864f301f210577',
+    messagingSenderId: '374338598102',
+    projectId: 'chatbyhridoy',
+    authDomain: 'chatbyhridoy.firebaseapp.com',
+    storageBucket: 'chatbyhridoy.firebasestorage.app',
+    measurementId: 'G-8L9KGVEJXZ',
+  );
+
 }

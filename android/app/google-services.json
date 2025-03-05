@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "809754512944",
-    "project_id": "quickchat-ab4c2",
-    "storage_bucket": "quickchat-ab4c2.firebasestorage.app"
+    "project_number": "374338598102",
+    "project_id": "chatbyhridoy",
+    "storage_bucket": "chatbyhridoy.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:809754512944:android:d5f356fe6af06a4667e7f5",
+        "mobilesdk_app_id": "1:374338598102:android:b61c93da562536ce210577",
         "android_client_info": {
           "package_name": "com.example.quickmassage"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCKq0gFPfjQtLB4lUuCEyyDeRIe3siVtmw"
+          "current_key": "AIzaSyBfNJ7OLA4bW7fiSGIBO2KPRAdHyiE7L3U"
         }
       ],
       "services": {

@@ -28,24 +28,23 @@ class Homescreen extends StatelessWidget {
   }
 
   Widget builduserlist() {
-    return StreamBuilder(
+    return StreamBuilder<List<Map<String, dynamic>>>(
       stream: _chatSevices.getusersteam(),
-
       builder: (context, snapshot) {
-        //error
-        if (snapshot.hasError) {
-          return Center(child: Text('Error: ${snapshot.error}'));
+        if (!snapshot.hasData || snapshot.data == null) {
+          return Center(child: Text("No users found"));
         }
-        //loading user
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return Center(child: CircularProgressIndicator());
+
+        // Ensure snapshot.data is not empty
+        if (snapshot.data!.isEmpty) {
+          return Center(child: Text("No users available"));
         }
-        //listview
+
         return ListView(
           children:
               snapshot.data!
                   .map<Widget>(
-                    (userData) => _builduselistitem(userData, context),
+                    (userData) => _buildUserListItem(userData, context),
                   )
                   .toList(),
         );
@@ -54,7 +53,7 @@ class Homescreen extends StatelessWidget {
   }
 
   //build user list item
-  Widget _builduselistitem(
+  Widget _buildUserListItem(
     Map<String, dynamic> usersata,
     BuildContext context,
   ) {
@@ -63,7 +62,12 @@ class Homescreen extends StatelessWidget {
       return Usertile(
         text: usersata["email"],
         ontab: () {
-          Get.to(ChatPage(recieveemail: usersata['email'], recieverid: usersata['uid'],));
+          Get.to(
+            ChatPage(
+              recieveemail: usersata['email'],
+              recieverid: usersata['uid'],
+            ),
+          );
         },
       );
     } else {
