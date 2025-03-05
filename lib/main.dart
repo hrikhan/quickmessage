@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quickmassage/auth/auth_gate.dart';
+import 'package:quickmassage/services/auth/auth_gate.dart';
 import 'package:quickmassage/firebase_options.dart';
-import 'package:quickmassage/screen/homescreen.dart';
-import 'package:quickmassage/screen/login_screen.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {

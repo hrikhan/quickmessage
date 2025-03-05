@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quickmassage/auth/auth_sevice.dart';
+import 'package:quickmassage/services/auth/auth_sevice.dart';
 
 import '../widgets/my_text-feild.dart';
 import 'login_screen.dart';
@@ -106,7 +106,7 @@ class _SignInState extends State<SignIn> {
                       ),
                       TextButton(
                         onPressed: () {
-                          Get.to(LoginScreen());
+                          Get.to(SignIn());
                         },
                         child: Text(
                           "Login",

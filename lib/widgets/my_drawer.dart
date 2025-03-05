@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
-import 'package:quickmassage/auth/auth_sevice.dart';
-import 'package:quickmassage/screen/homescreen.dart';
+
+import 'package:quickmassage/services/auth/auth_sevice.dart';
 import 'package:quickmassage/screen/login_screen.dart';
 import 'package:quickmassage/screen/setting.dart';
 
