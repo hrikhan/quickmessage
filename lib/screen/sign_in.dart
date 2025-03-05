@@ -58,7 +58,7 @@ class _SignInState extends State<SignIn> {
                   child: Text(
                     'Create a new',
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: Colors.purple,
                       fontSize: 34,
                       fontWeight: FontWeight.bold,
                     ),
@@ -86,7 +86,7 @@ class _SignInState extends State<SignIn> {
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Colors.purple,
                     minimumSize: Size(500, 50),
                   ),
                   onPressed: register,
@@ -110,7 +110,7 @@ class _SignInState extends State<SignIn> {
                         },
                         child: Text(
                           "Login",
-                          style: TextStyle(fontSize: 18, color: Colors.blue),
+                          style: TextStyle(fontSize: 18, color: Colors.purple),
                         ),
                       ),
                     ],
